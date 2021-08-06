@@ -111,7 +111,8 @@ def find_library_file(libname):
     lib_dirs = [os.path.join(sys.prefix, 'lib'),
                              '/usr/local/lib',
                              '/usr/lib64',
-                             '/usr/lib']
+                             '/usr/lib',
+                             '/usr/local/boost_1_70_0']
     try:
         lib_dirs.append(os.path.join('/usr/lib',
                                     getattr(sys, "implementation", sys)
